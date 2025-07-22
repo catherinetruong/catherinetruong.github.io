@@ -411,3 +411,64 @@ body.dark-mode img.invert-icon {
 body.dark-mode .photo-caption figcaption {
   color: white;
 }
+
+.contact-section {
+    padding: 40px 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-info > div {
+    flex: 1 1 300px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.photo-caption {
+    text-align: center;
+}
+
+.photo-caption img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #815ac0;
+}
+
+.photo-caption figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+body.dark-mode .photo-caption figcaption {
+    color: white;
+}
+
+/* Responsive fix: stack layout vertically on small screens */
+@media (max-width: 700px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info > div {
+        width: 100%;
+    }
+
+    .photo-caption img {
+        max-width: 80%;
+    }
+}
