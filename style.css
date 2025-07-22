@@ -380,3 +380,7 @@ body.dark-mode .download-button {
 body.dark-mode .download-button:hover {
   background-color: #888;
 }
+
+html {
+  scroll-padding-top: 60px;
+}
