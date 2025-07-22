@@ -382,5 +382,32 @@ body.dark-mode .download-button:hover {
 }
 
 [id] {
-  scroll-margin-top: 60px;  /* Adjust 60px to your navbar height */
+  scroll-margin-top: 60px;
+}
+
+body.dark-mode img.invert-icon {
+  filter: invert(1) brightness(1.2);
+}
+
+.photo-caption {
+  text-align: center;  /* center image and caption */
+  margin: 20px 0;
+}
+
+.photo-caption img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.photo-caption figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+body.dark-mode .photo-caption figcaption {
+  color: white;
 }
