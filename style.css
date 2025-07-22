@@ -287,6 +287,7 @@ body.dark-mode .download-button:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #815ac0;
+  display: block;
 }
 
 .hero-text {
