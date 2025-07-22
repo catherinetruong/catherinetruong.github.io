@@ -103,3 +103,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initScrollReveal();
 });
+
+// ===== Resume Download Tracking =====
+const trackResumeDownload = (type) => {
+  console.log(`Downloaded ${type} resume`);
+  // You can hook this into Google Analytics, Mixpanel, or a backend later
+};
