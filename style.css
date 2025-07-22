@@ -381,6 +381,6 @@ body.dark-mode .download-button:hover {
   background-color: #888;
 }
 
-html {
-  scroll-padding-top: 60px;
+[id] {
+  scroll-margin-top: 60px;  /* Adjust 60px to your navbar height */
 }
