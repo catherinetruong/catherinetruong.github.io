@@ -109,3 +109,98 @@ const trackResumeDownload = (type) => {
   console.log(`Downloaded ${type} resume`);
   // You can hook this into Google Analytics, Mixpanel, or a backend later
 };
+
+// Tab switch logic for Projects section
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab");
+  const tabContents = document.querySelectorAll(".project-tab-content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // Remove active classes
+      tabs.forEach((t) => t.classList.remove("active"));
+      tabContents.forEach((c) => c.classList.remove("active"));
+
+      // Add active to clicked tab and corresponding content
+      tab.classList.add("active");
+      const target = tab.getAttribute("data-tab");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+
+// Tab switching logic for projects
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".project-tab-content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-tab");
+
+      // Remove active from all tabs and contents
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      // Add active to clicked tab and its content
+      tab.classList.add("active");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+
+function openResumeModal(pdfUrl) {
+  const modal = document.getElementById("resumeModal");
+  const viewer = document.getElementById("resumeViewer");
+  viewer.src = pdfUrl;
+  modal.style.display = "block";
+}
+
+document.getElementById("closeModal").onclick = function () {
+  const modal = document.getElementById("resumeModal");
+  const viewer = document.getElementById("resumeViewer");
+  viewer.src = "";
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  const modal = document.getElementById("resumeModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+    document.getElementById("resumeViewer").src = "";
+  }
+};
+
+function openResumeModal(pdfUrl) {
+  const modal = document.getElementById("resumeModal");
+  const viewer = document.getElementById("resumeViewer");
+  const toggleBtn = document.getElementById('dark-toggle');
+
+  viewer.src = pdfUrl;
+  modal.style.display = "block";
+
+  if (toggleBtn) toggleBtn.style.display = 'none';  // hide toggle when modal open
+}
+
+document.getElementById("closeModal").onclick = function () {
+  const modal = document.getElementById("resumeModal");
+  const viewer = document.getElementById("resumeViewer");
+  const toggleBtn = document.getElementById('dark-toggle');
+
+  viewer.src = "";
+  modal.style.display = "none";
+
+  if (toggleBtn) toggleBtn.style.display = 'inline-block'; // show toggle again
+};
+
+window.onclick = function (event) {
+  const modal = document.getElementById("resumeModal");
+  const toggleBtn = document.getElementById('dark-toggle');
+
+  if (event.target === modal) {
+    modal.style.display = "none";
+    document.getElementById("resumeViewer").src = "";
+
+    if (toggleBtn) toggleBtn.style.display = 'inline-block';
+  }
+};

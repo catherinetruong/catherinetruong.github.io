@@ -14,7 +14,7 @@
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -41,8 +41,43 @@
     </p>
     </section>
 
-    <section id="resume" class="reveal">
-    <h2>Resumes</h2>
+    <section id="experience" class="reveal">
+    <h2>Experience</h2>
+
+        <section class="timeline-section">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <div class="timeline-content">
+                        <h4>Sept. 2024 – June 2025</h4>
+                        <h3>Full-Stack Engineering Intern (Part-Time)</h3>
+                        <p><strong>First American Financial – Santa Ana, CA</strong></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <div class="timeline-content">
+                        <h4>Jun. 2024 – Aug. 2024</h4>
+                        <h3>Backend Software Engineering Intern (Full-Time)</h3>
+                        <p><strong>First American Financial – Santa Ana, CA</strong></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <div class="timeline-content">
+                        <h4>Apr. 2023 – Sept. 2024</h4>
+                        <h3>Student Information Systems Intern (Part-Time)</h3>
+                        <p><strong>UCR Information & Technology Solutions – Riverside, CA</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
     <p>
         As a recent Computer Engineering graduate, I bring hands-on experience in both software development and embedded systems. I’m passionate about continuous learning and have actively pursued opportunities in both fields. I invite you to explore my work across software and hardware — each resume highlights relevant skills, projects, and contributions tailored to those domains.
     </p>
@@ -50,59 +85,112 @@
         <!-- Software Resume -->
         <div class="resume-card">
         <h3>Software Resume</h3>
+        <div class="resume-frame-wrapper">
             <iframe
-                src="/resumes/Catherine_Truong_New_Grad_Software.pdf"
-                title="Software Resume Preview"
-                frameborder="0"
+            src="/resumes/Catherine_Truong_New_Grad_Software.pdf"
+            title="Software Resume Preview"
+            frameborder="0"
             ></iframe>
-            <a
-                href="/resumes/Catherine_Truong_New_Grad_Software.pdf"
-                download
-                class="download-button"
-                target="_blank"
-                onclick="trackResumeDownload('software')"
-            >
+            <button
+            class="fullscreen-button"
+            onclick="openResumeModal('/resumes/Catherine_Truong_New_Grad_Software.pdf')"
+            title="Fullscreen Preview"
+            >⛶</button>
+        </div>
+        <a
+            href="/resumes/Catherine_Truong_New_Grad_Software.pdf"
+            download
+            class="download-button"
+            target="_blank"
+            onclick="trackResumeDownload('software')"
+        >
             ⬇️ Download SW Resume
-            </a>
+        </a>
         </div>
 
-        <!-- ES Resume -->
+        <!-- Embedded Systems Resume -->
         <div class="resume-card">
         <h3>Embedded Systems Resume</h3>
+        <div class="resume-frame-wrapper">
             <iframe
-                src="/resumes/Catherine_Truong_New_Grad_Hardware.pdf"
-                title="Embedded Systems Resume Preview"
-                frameborder="0"
+            src="/resumes/Catherine_Truong_New_Grad_Hardware.pdf"
+            title="Embedded Systems Resume Preview"
+            frameborder="0"
             ></iframe>
-            <a
-                href="/resumes/Catherine_Truong_New_Grad_Hardware.pdf"
-                download
-                class="download-button"
-                target="_blank"
-                onclick="trackResumeDownload('hardware')"
-            >
-            ⬇️ Download ES Resume
-            </a>
+            <button
+            class="fullscreen-button"
+            onclick="openResumeModal('/resumes/Catherine_Truong_New_Grad_Hardware.pdf')"
+            title="Fullscreen Preview"
+            >⛶</button>
         </div>
+        <a
+            href="/resumes/Catherine_Truong_New_Grad_Hardware.pdf"
+            download
+            class="download-button"
+            target="_blank"
+            onclick="trackResumeDownload('hardware')"
+        >
+            ⬇️ Download ES Resume
+        </a>
+        </div>
+
     </div>
     </section>
 
 
-    <section id="projects" class="reveal">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>Project One</h3>
-                <p>Short description of the project.</p>
-                <a href="https://github.com/yourname/project1" target="_blank">View Code</a>
+    <section id="projects" class="project-section">
+    <h2 class="section-header">Projects</h2>
+
+    <!-- Tab Buttons -->
+    <div class="tab-buttons">
+        <button class="tab active" data-tab="software">Software</button>
+        <button class="tab" data-tab="embedded">Embedded</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+
+        <!-- Software Projects -->
+        <div class="project-tab-content active" id="software">
+        <div class="timeline">
+            <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="timeline-content">
+                <h4>Jan 2024 – Mar 2024</h4>
+                <h3>CamJam</h3>
+                <p>React Native mobile app for photo-sharing in time-limited events.</p>
+                <ul>
+                <li>Implemented Expo camera integration and Firebase backend</li>
+                <li>Supported dynamic photo galleries and timed access control</li>
+                </ul>
             </div>
-            <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Another short description.</p>
-                <a href="https://github.com/yourname/project2" target="_blank">View Code</a>
             </div>
+            <!-- Add more software projects here -->
         </div>
+        </div>
+
+        <!-- Embedded Projects -->
+        <div class="project-tab-content" id="embedded">
+        <div class="timeline">
+            <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="timeline-content">
+                <h4>Oct 2023 – Dec 2023</h4>
+                <h3>Smart Plant Monitor</h3>
+                <p>IoT sensor system using Arduino to monitor soil and water levels.</p>
+                <ul>
+                <li>Used moisture sensors with serial communication</li>
+                <li>Built custom LCD interface and buzzer alerts</li>
+                </ul>
+            </div>
+            </div>
+            <!-- Add more embedded projects here -->
+        </div>
+        </div>
+
+    </div>
     </section>
+
 
     <section id="contact" class="contact-section reveal">
     <h2 class="section-header">Contact</h2>
@@ -124,7 +212,7 @@
         </div>
 
         <div class="photo-container">
-        <figure class="contact-info">
+        <figure class="photo-caption">
             <img src="images/grad_cat.jpg" alt="Catherine Truong" />
             <figcaption>Get it? Cause I'm CAT-herine ₍^. .^₎⟆</figcaption>
         </figure>
@@ -138,6 +226,13 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Fullscreen Resume Modal -->
+    <div id="resumeModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <iframe id="resumeViewer" class="modal-content" title="Fullscreen Resume Viewer"></iframe>
+    </div>
+
 </body>
 
 </html>
