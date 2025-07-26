@@ -573,6 +573,29 @@ body.dark-mode .timeline-content ul li {
   box-shadow: 0 2px 6px rgba(129, 90, 192, 0.15);
 }
 
+/* Responsive Resume Section Fix */
+@media (max-width: 768px) {
+  .resume-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .resume-card {
+    width: 90%;
+    max-width: 500px;
+    padding: 16px;
+  }
+
+  .resume-frame-wrapper {
+    padding-top: 130%; /* increase iframe height on mobile */
+  }
+
+  .resume-frame-wrapper iframe {
+    border-radius: 12px;
+  }
+}
+
 /* Fullscreen preview button */
 .fullscreen-button {
   position: absolute;
