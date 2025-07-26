@@ -1,3 +1,11 @@
+function showPopupResume(pdfUrl) {
+  console.log("showPopupResume called with:", pdfUrl);
+  const modal = document.getElementById('resumeModal');
+  const modalIframe = document.getElementById('resumeViewer');
+  modalIframe.src = pdfUrl;
+  modal.style.display = 'flex';
+}
+
 // ===== Dark Mode Toggle =====
 const toggleDarkMode = () => {
     const isDark = document.body.classList.toggle('dark-mode');
@@ -149,58 +157,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function openResumeModal(pdfUrl) {
-  const modal = document.getElementById("resumeModal");
-  const viewer = document.getElementById("resumeViewer");
-  viewer.src = pdfUrl;
-  modal.style.display = "block";
+/////////
+
+//
+const modal = document.getElementById('resumeModal');
+const modalIframe = document.getElementById('resumeViewer');
+const closeModalBtn = document.getElementById('closeModal');
+
+function showPopupResume(pdfUrl) {
+  modalIframe.src = pdfUrl;
+  modal.style.display = 'flex';
 }
 
-document.getElementById("closeModal").onclick = function () {
-  const modal = document.getElementById("resumeModal");
-  const viewer = document.getElementById("resumeViewer");
-  viewer.src = "";
-  modal.style.display = "none";
+closeModalBtn.onclick = () => {
+  modal.style.display = 'none';
+  modalIframe.src = ''; // clear to stop loading when closed
 };
 
-window.onclick = function (event) {
-  const modal = document.getElementById("resumeModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-    document.getElementById("resumeViewer").src = "";
-  }
-};
-
-function openResumeModal(pdfUrl) {
-  const modal = document.getElementById("resumeModal");
-  const viewer = document.getElementById("resumeViewer");
-  const toggleBtn = document.getElementById('dark-toggle');
-
-  viewer.src = pdfUrl;
-  modal.style.display = "block";
-
-  if (toggleBtn) toggleBtn.style.display = 'none';  // hide toggle when modal open
-}
-
-document.getElementById("closeModal").onclick = function () {
-  const modal = document.getElementById("resumeModal");
-  const viewer = document.getElementById("resumeViewer");
-  const toggleBtn = document.getElementById('dark-toggle');
-
-  viewer.src = "";
-  modal.style.display = "none";
-
-  if (toggleBtn) toggleBtn.style.display = 'inline-block'; // show toggle again
-};
-
-window.onclick = function (event) {
-  const modal = document.getElementById("resumeModal");
-  const toggleBtn = document.getElementById('dark-toggle');
-
-  if (event.target === modal) {
-    modal.style.display = "none";
-    document.getElementById("resumeViewer").src = "";
-
-    if (toggleBtn) toggleBtn.style.display = 'inline-block';
+// Also close modal when clicking outside the iframe
+modal.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    modalIframe.src = '';
   }
 };
