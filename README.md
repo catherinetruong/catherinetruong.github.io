@@ -1,6 +1,9 @@
 # catherinetruong.github.io
 Under Construction!
 
+## V2
+[![Link to YouTube Demo](images/thumb.png)](https://youtu.be/w48mAi4thgs)
+
 ## V1
 
 <img width="2521" height="1277" alt="image" src="https://github.com/user-attachments/assets/dcd4331c-78b1-4128-b76e-68e0e0e5410b" />
