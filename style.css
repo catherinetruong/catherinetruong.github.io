@@ -22,7 +22,7 @@ body {
 .white-background::before {
   content: '';
   position: absolute;
-  top: 7%;
+  top: 8%;
   left: 0;
   width: 13%; 
   height: 93%;
@@ -35,7 +35,7 @@ body {
   align-items: center;
 }
 
-/* Header */
+/* Header "catherine's journal"*/
 .white-background-header{
   font-family: "Playwrite GB S", cursive;
   font-size: 22px;
@@ -50,15 +50,16 @@ body {
 /* Left stripe navigation container */
 .left-stripe {
   position: absolute;
-  top: 7%;  /* same as stripe top */
+  top: 8%;  /* same as stripe top */
   left: 0;
   width: 13%;
+  min-width: 100px;
   height: 93%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.5vh;
 }
 
 /* Nav item (icon + caption) */
@@ -68,26 +69,28 @@ body {
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 10px;
-  padding: 15px;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 /* Icon images */
 .nav-item img {
-  width: 45px;
-  height: 45px;
+  width: 60%;
+  max-width: 60px;
+  height: auto;
   transition: all 0.3s ease;
-  padding: 20px;
 }
 
 /* Caption text */
 .nav-item span {
   font-family: "Dongle", sans-serif;
-  font-size: 30px;
+  font-size: clamp(12px, 1.5vw, 20px);
   color: #7866AE;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 0.5vh;
   transition: all 0.3s ease;
+  word-wrap: break-word; 
 }
 
 /* Hover effect */
@@ -315,37 +318,39 @@ body {
   height: 90%;
   background-color: #ffffff;
   border: 2.5px solid #9ba2d4;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 2rem;
+  padding: 3rem;
   box-sizing: border-box;
   overflow-y: auto; /* scroll inside box, not whole page */
   display: flex;
   flex-direction: column;
-  gap: 20px; /* more space between categories */
+  gap: 0.5vh; /* more space between categories */
   opacity: 1;
 }
 
 .about-main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1vh;
 }
 
 .about-item {
   display: flex;
   align-items: flex-start;
-  gap: 25px;
+  gap: 2px;
 }
 
 .about-item img {
-  width: 75px;
-  height: 75px;
+  width: 8vh;
+  height: 8vh;
+  padding: 0.5rem;
 }
 
 .about-item span {
   font-family: "Dongle", sans-serif;
-  font-size: 35px;
+  font-size: 3vh;
   line-height: 1.4;
+  justify-content: center;
 }
 
 .about-contact {
@@ -354,7 +359,7 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-top: 15px;
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .contact-item {
@@ -362,12 +367,12 @@ body {
   align-items: center;
   gap: 10px;
   font-family: "Dongle", sans-serif;
-  font-size: 30px;
+  font-size: 2.4vh;
 }
 
 .contact-item img {
-  width: 50px;
-  height: 50px;
+  width: 3vh;
+  height: 3vh;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -382,4 +387,256 @@ body {
 
 .content-section.active {
   display: block; /* show only the active section */
+}
+
+/* EXPERIENCE SECTION */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-top: 2vh;
+  height: 90%;            /* make container fit inside content box */
+  overflow-y: auto;       /* vertical scroll */
+  padding-right: 1vw;     /* prevent scrollbar overlap */
+}
+
+/* Scrollbar styling to match your theme */
+.experience-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.experience-container::-webkit-scrollbar-thumb {
+  background-color: rgba(120,102,174,0.3);
+  border-radius: 4px;
+}
+
+.experience-container::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFCFD;
+  border: 2.5px solid #9ba2d4;
+  border-radius: 1.5rem;
+  padding: 2vh 2vw;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(120,102,174,0.2);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.company-logo {
+  width: 6vh;
+  height: 6vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.company-info {
+  flex: 1;
+  padding: 0 1vw;
+}
+
+.company-name {
+  font-family: "Playwrite GB S", cursive;
+  font-size: 2vh;
+  font-weight: 600;
+  color: #7866AE;
+}
+
+.role {
+  font-family: "Dongle", sans-serif;
+  font-size: 1.8vh;
+  color: #7866AE;
+}
+
+.location-date {
+  text-align: right;
+  min-width: 12vw;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.6vh;
+  color: #7866AE;
+}
+
+.entry-bullets {
+  margin-top: 1vh;
+  padding-left: 2vh;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.8vh;
+  line-height: 1.4;
+  color: #333;
+}
+
+.entry-bullets li {
+  margin-bottom: 0.8vh;
+}
+
+.entry-pics {
+  display: flex;
+  gap: 1vh;
+  margin-top: 1vh;
+  overflow-x: auto;
+  padding-bottom: 0.5vh;
+}
+
+.entry-pics::-webkit-scrollbar {
+  height: 8px;
+}
+
+.entry-pics::-webkit-scrollbar-thumb {
+  background-color: rgba(120,102,174,0.3);
+  border-radius: 4px;
+}
+
+.entry-pics::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.entry-pic {
+  width: 8vh;
+  height: 8vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entry-pic:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-tag {
+  border: 3px solid #7866AE;
+  border-radius: 12px;
+  padding: 5px 12px;
+  font-family: "Dongle", sans-serif;
+  font-size: 2.5vh;
+  color: #7866AE;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+  background-color: #B8C0FF;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  height: 85%;
+  overflow-y: auto;
+  padding-right: 1vw;
+}
+
+.projects-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background-color: rgba(120,102,174,0.3);
+  border-radius: 4px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.project-entry {
+  background-color: #FFFCFD;
+  border: 2.5px solid #9ba2d4;
+  border-radius: 1.5rem;
+  padding: 2vh 2vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(120,102,174,0.2);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  border: 2px solid #7866AE;
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-family: "Dongle", sans-serif;
+  font-size: 2vh;
+  color: #7866AE;
+}
+
+.tag-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-button.active {
+  background-color: #b8c0ff;
+  border-color: #6a73d9;
+  color: white;
+}
+
+#view-all {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
