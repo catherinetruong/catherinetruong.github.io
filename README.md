@@ -1,7 +1,7 @@
 # catherinetruong.github.io
 Under Construction!
 
-## V2
+## V2 (Click for Demo Video)
 [![Link to YouTube Demo](images/thumb.png)](https://youtu.be/w48mAi4thgs)
 
 ## V1
