@@ -3,463 +3,575 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet Catherine Truong ⋆˙⟡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catherine Truong - Frontend-focused Software Engineer Portfolio" />
+  <title>Catherine Truong | Software Engineer</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Covered+By+Your+Grace&family=Dongle&family=Gamja+Flower&family=Patrick+Hand&family=Playwrite+GB+S:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="white-background">
-    <a href="#" class="white-background-header">catherine's journal</a>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="header-title">Catherine Truong</a>
+      <div class="header-actions">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="CatherineTruong_Software.pdf" download="CatherineTruong_Resume.pdf" class="download-btn" aria-label="Download Resume">
+          <img src="images/icons/download_inactive.png" alt="Download" class="download-icon">
+          <span class="download-text">Resume</span>
+        </a>
+      </div>
+    </header>
 
-    <!-- download button -->
-      <a href="CatherineTruong_Software.pdf" download class="download-btn">
-        <img src="images/download_inactive.png" alt="Download CV">
-      </a> 
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="nav-item active" data-section="about" aria-label="About">
+        <img src="images/icons/user_active.png" alt="About" class="nav-icon">
+        <span class="nav-label">About</span>
+      </div>
+      <div class="nav-item" data-section="skills" aria-label="Skills">
+        <img src="images/icons/skills_inactive.png" alt="Skills" class="nav-icon">
+        <span class="nav-label">Skills</span>
+      </div>
+      <div class="nav-item" data-section="experience" aria-label="Experience">
+        <img src="images/icons/work_exp_inactive.png" alt="Experience" class="nav-icon">
+        <span class="nav-label">Experience</span>
+      </div>
+      <div class="nav-item" data-section="projects" aria-label="Projects">
+        <img src="images/icons/projects_inactive.png" alt="Projects" class="nav-icon">
+        <span class="nav-label">Projects</span>
+      </div>
+    </nav>
 
-    <!-- left nav bar -->
-    <div class="left-stripe"> 
-      <div class="nav-item" data-alt-image="images/icons/user_inactive.png">
-        <img src="images/icons/user_active.png" alt="About Icon">
-        <span>About</span>
-      </div>
-      <div class="nav-item" data-alt-image="images/icons/skills_inactive.png">
-        <img src="images/icons/skills_active.png" alt="Skills Icon">
-        <span>Skills</span>
-      </div>
-      <div class="nav-item" data-alt-image="images/icons/work_exp_inactive.png">
-        <img src="images/icons/work_exp_active.png" alt="Experience Icon">
-        <span>Experience</span>
-      </div>
-      <div class="nav-item" data-alt-image="images/icons/projects_inactive.png">
-        <img src="images/icons/projects_active.png" alt="Projects Icon">
-        <span>Projects</span>
-      </div>
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <!-- Content Area -->
+      <main class="content-area">
+        <!-- About Section -->
+        <section class="content-section active" id="about" aria-labelledby="about-title">
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <div class="content-box">
+            <div class="about-container">
+              <div class="about-main">
+                <div class="about-item">
+                  <img src="images/icons/location.png" alt="Location" class="about-icon">
+                  <div class="about-text">
+                    <strong>Location</strong>
+                    <p>Southern California<br>(Open to Relocation)</p>
+                  </div>
+                </div>
+                <div class="about-item">
+                  <img src="images/icons/education.png" alt="Education" class="about-icon">
+                  <div class="about-text">
+                    <strong>Education</strong>
+                    <p>University of California, Riverside<br>B.S. in Computer Engineering</p>
+                  </div>
+                </div>
+                <div class="about-item">
+                  <img src="images/icons/interests.png" alt="Interests" class="about-icon">
+                  <div class="about-text">
+                    <strong>Interests</strong>
+                    <p>Frontend/Web Development, Cloud Computing, Embedded Systems<br><em>pc games, floral arrangement, sewing pouches</em></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-contact">
+                <h3 class="contact-title">Let's Connect</h3>
+                <div class="contact-item">
+                  <a href="https://www.linkedin.com/in/catherinedaitruong" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <img src="images/icons/linkedin_inactive.png" alt="LinkedIn" class="contact-icon">
+                    <span>linkedin.com/in/catherinedaitruong</span>
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <a href="mailto:catherinedaitruong@gmail.com" class="contact-link">
+                    <img src="images/icons/email_inactive.png" alt="Email" class="contact-icon">
+                    <span>catherinedaitruong@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="content-section" id="skills" aria-labelledby="skills-title">
+          <h2 class="section-title" id="skills-title">Skills</h2>
+          <div class="content-box">
+            <div class="skills-container">
+              <!-- Languages -->
+              <div class="skill-group">
+                <h3 class="skill-category" data-color="#696FC7">Languages</h3>
+                <div class="skills-list">
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>C++</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br>SWE Intern @ First American, <br>Undergrad @UCR">#C++</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>HTML/CSS</div><br>Project(s):<br>DormDash, FinanceDB, Portfolio Website, SteamDB<br><br>Hackathon(s):<br>Cutie Hack 2021, Rose Hack 2023<br><br>Position(s):<br>SIS Intern @ UCR ITS,<br>Undergrad @ UCR">#HTML/CSS</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>JavaScript</div><br>Project(s):<br>FinanceDB, Taskly<br><br>Position(s):<br>Backend SWE Intern @ First American,<br>Undergrad @ UCR">#JavaScript</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>SQL</div><br>Project(s):<br>Airline Management System<br><br>Position(s):<br>SIS Intern @ UCR ITS,<br>SWE Intern @ First American,<br>Undergrad @ UCR">#SQL</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>PostgreSQL</div><br>Project(s):<br>Airline Management System<br><br>Position(s):<br><br>">#PostgreSQL</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Swift</div><br>Project(s):<br>CamJam<br><br>Position(s):<br><br>">#Swift</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Python</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br>SWE Intern @ First American,<br>Undergrad @ UCR">#Python</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>TypeScript</div><br>Project(s):<br>Cam Jam, FinanceDB, Taskly<br><br>Position(s):<br><br>">#TypeScript</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Verilog</div><br>Project(s):<br><br>Position(s):<br>Undergrad @ UCR">#Verilog</div>
+                </div>
+              </div>
+
+              <!-- Frameworks/Libraries -->
+              <div class="skill-group">
+                <h3 class="skill-category" data-color="#A7AAE1">Frameworks/Libraries</h3>
+                <div class="skills-list">
+                  <div class="skill-tag" data-color="#A7AAE1" data-info="<div class='popup-skill-name'>Angular</div><br>Project(s):<br>Personal Projects<br><br>Position(s):<br><br>">#Angular</div>
+                  <div class="skill-tag" data-color="#A7AAE1" data-info="<div class='popup-skill-name'>React</div><br>Project(s):<br>CamJam, FinanceDB<br><br>Position(s):<br><br>">#React</div>
+                  <div class="skill-tag" data-color="#A7AAE1" data-info="<div class='popup-skill-name'>React Native</div><br>Project(s):<br>CamJam<br><br>Position(s):<br><br>">#ReactNative</div>
+                  <div class="skill-tag" data-color="#A7AAE1" data-info="<div class='popup-skill-name'>Recharts</div><br>Project(s):<br>FinanceDB<br><br>Position(s):<br><br>">#Recharts</div>
+                  <div class="skill-tag" data-color="#A7AAE1" data-info="<div class='popup-skill-name'>Tailwind</div><br>Project(s):<br>FinanceDB<br><br>Position(s):<br><br>">#Tailwind</div>
+                </div>
+              </div>
+
+              <!-- Cloud/DevOps -->
+              <div class="skill-group">
+                <h3 class="skill-category" data-color="#696FC7">Cloud/DevOps</h3>
+                <div class="skills-list">
+                  <div class="skill-tag" data-color="#696FC7" data-info="<div class='popup-skill-name'>AWS</div><br>Project(s):<br><br>Position(s):<br>AWSSheBuilds Mentorship,<br>Backend SWE @ First American">#AWS</div>
+                  <div class="skill-tag" data-color="#696FC7" data-info="<div class='popup-skill-name'>Azure</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Azure</div>
+                  <div class="skill-tag" data-color="#696FC7" data-info="<div class='popup-skill-name'>Docker</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Docker</div>
+                  <div class="skill-tag" data-color="#696FC7" data-info="<div class='popup-skill-name'>Firebase</div><br>Project(s):<br>CamJam, FinanceDB<br><br>Position(s):<br><br>">#Firebase</div>
+                  <div class="skill-tag" data-color="#696FC7" data-info="<div class='popup-skill-name'>Git</div><br>Project(s):<br>All Projects<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#Git</div>
+                </div>
+              </div>
+
+              <!-- Tools/Platforms -->
+              <div class="skill-group">
+                <h3 class="skill-category" data-color="#A7AAE1">Tools/Platforms</h3>
+                <div class="skills-list">
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>Confluence</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Confluence</div>
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>Figma</div><br>Project(s):<br>FinanceDB, SteamDB, Theta Tau Website Design<br><br>Hackathon(s):<br>Cutie Hack 2021, Rose Hack 2023<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#Figma</div>
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>Jira</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Jira</div>
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>Microsoft Suite</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#MicrosoftSuite</div>
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>Miro</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Miro</div>
+                  <div class="skill-tag" data-color="#F5D3C4" data-info="<div class='popup-skill-name'>ServiceNow</div><br>Project(s):<br><br>Position(s):<br>SIS Intern @ UCR ITS">#ServiceNow</div>
+                </div>
+              </div>
+
+              <!-- Embedded Systems -->
+              <div class="skill-group">
+                <h3 class="skill-category" data-color="#696FC7">Embedded Systems</h3>
+                <div class="skills-list">
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Arduino</div><br>Project(s):<br>Simon Color Game, Phone Gimble<br><br>Position(s):<br><br>">#Arduino</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Raspberry Pi</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br><br>">#RaspberryPi</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Microcontroller</div><br>Project(s):<br>Phone Gimble<br><br>Position(s):<br><br>">#Microcontroller</div>
+                  <div class="skill-tag" data-color="#F2AEBB" data-info="<div class='popup-skill-name'>Motors</div><br>Project(s):<br>Phone Gimble<br><br>Position(s):<br><br>">#Motors</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="content-section" id="experience" aria-labelledby="experience-title">
+          <h2 class="section-title" id="experience-title">Experience</h2>
+          <div class="content-box">
+            <div class="experience-container">
+              <!-- TechForce Robotics -->
+              <article class="experience-entry">
+                <div class="entry-header">
+                  <div class="skeleton skeleton-logo"></div>
+                  <img class="company-logo" src="images/logos/tfr.jpg" alt="TechForce Robotics Logo" loading="lazy">
+                  <div class="company-info">
+                    <h3 class="company-name">TechForce Robotics</h3>
+                    <p class="role">Full-Stack Software Engineer (Frontend-Focus)</p>
+                  </div>
+                  <div class="location-date">
+                    <span class="location">Temecula, CA</span>
+                    <span class="dates">Nov. 2025 – Present</span>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Migration: Led migration of legacy HTML/CSS/JavaScript UI into a modern React + Ionic + TypeScript + Tailwind architecture, building reusable components and reducing UI code duplication by 70%</li>
+                  <li>Integration: Built a service layer with exponential backoff, rate-limit handling, and Twilio outbound-calling workflows, achieving 95%+ API reliability under unstable network conditions</li>
+                  <li>Testing: Developed a full E2E testing suite using Selenium WebDriver, Mocha, Chai, and Page Object Model structure, cutting test failures by 80% and reaching 95% test stability</li>
+                  <li>Performance: Implemented centralized API handling with TTL caching, retry logic, and request logging, improving perceived performance by 40% and reducing server load by 60%</li>
+                  <li>UI/UX: Designed and prototyped the full mobile and desktop interface in Figma, building component systems and interaction flows that served as the blueprint for the production React/Ionic implementation</li>
+                </ul>
+              </article>
+
+              <!-- AWS She Builds Mentorship -->
+              <article class="experience-entry">
+                <div class="entry-header">
+                  <div class="skeleton skeleton-logo"></div>
+                  <img class="company-logo" src="images/logos/aws.jpeg" alt="AWS Logo" loading="lazy">
+                  <div class="company-info">
+                    <h3 class="company-name">AWS She Builds Mentorship Program</h3>
+                    <p class="role">Selected Mentee</p>
+                  </div>
+                  <div class="location-date">
+                    <span class="location">Remote</span>
+                    <span class="dates">Aug. 2025 – Nov. 2025</span>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Qualification: Chosen for competitive AWS-led mentorship program; engaging in cloud projects and DevOps practices with AWS professionals to strengthen deployment, CI/CD, and career development & technical skills</li>
+                </ul>
+              </article>
+
+              <!-- First American Financial: Full-Stack Intern -->
+              <article class="experience-entry">
+                <div class="entry-header">
+                  <div class="skeleton skeleton-logo"></div>
+                  <img class="company-logo" src="images/logos/first_american.png" alt="First American Logo" loading="lazy">
+                  <div class="company-info">
+                    <h3 class="company-name">First American Financial</h3>
+                    <p class="role">Full-Stack Engineering Intern</p>
+                  </div>
+                  <div class="location-date">
+                    <span class="location">Santa Ana, CA</span>
+                    <span class="dates">Sept. 2024 – June 2025</span>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Automation: Enhanced and deployed an automated Jira update/release notes generator to reduce senior overhead by ~30%</li>
+                  <li>DevOps: Collaborated with senior engineers in planning sessions for Terraform, Kubernetes, and Docker adoption for MVP</li>
+                  <li>Technical Documentation: Updated 3 GitHub Pages platforms to include legacy documentation using MkDocs</li>
+                </ul>
+                <div class="entry-pics mobile-collapsed">
+                  <div class="skeleton skeleton-pic"></div>
+                  <img src="images/experience/fa1.png" alt="FA Project" class="entry-pic" loading="lazy">
+                  <div class="skeleton skeleton-pic"></div>
+                  <img src="images/experience/fa2.png" alt="FA Project" class="entry-pic" loading="lazy">
+                </div>
+              </article>
+
+              <!-- First American Financial: Backend SWE Intern -->
+              <article class="experience-entry">
+                <div class="entry-header">
+                  <div class="skeleton skeleton-logo"></div>
+                  <img class="company-logo" src="images/logos/first_american.png" alt="First American Logo" loading="lazy">
+                  <div class="company-info">
+                    <h3 class="company-name">First American Financial</h3>
+                    <p class="role">Backend Software Engineering Intern</p>
+                  </div>
+                  <div class="location-date">
+                    <span class="location">Santa Ana, CA</span>
+                    <span class="dates">Jun. 2024 – Aug. 2024</span>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>AWS Optimization: Curated AWS CloudWatch usage using Python and automated via Lambda & EventBridge, reducing costs by 78% and unused log groups by 88%, preventing future workload</li>
+                  <li>HTTPS Compliance: Automated HTTPS-conditional security compliance for 92% of AWS S3 buckets</li>
+                  <li>Design Filtering: Designed & optimized a filter to determine log group necessity in less than 3 seconds per log group</li>
+                  <li>Data Export: Exported 4 JSON files to S3 tracking 600+ updated log groups involving 4 years worth of data</li>
+                </ul>
+                <div class="entry-pics mobile-collapsed">
+                  <div class="skeleton skeleton-pic"></div>
+                  <img src="images/experience/fa_backend1.png" alt="FA Backend" class="entry-pic" loading="lazy">
+                  <div class="skeleton skeleton-pic"></div>
+                  <img src="images/experience/fa_backend2.png" alt="FA Backend" class="entry-pic" loading="lazy">
+                </div>
+              </article>
+
+              <!-- UCR ITS -->
+              <article class="experience-entry">
+                <div class="entry-header">
+                  <div class="skeleton skeleton-logo"></div>
+                  <img class="company-logo" src="images/logos/ucr.jpg" alt="UCR Logo" loading="lazy">
+                  <div class="company-info">
+                    <h3 class="company-name">UCR Information & Technology Solutions</h3>
+                    <p class="role">Student Information Systems Intern</p>
+                  </div>
+                  <div class="location-date">
+                    <span class="location">Riverside, CA</span>
+                    <span class="dates">Apr. 2023 – Sept. 2024</span>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Database Queries: Tested SQL queries for students and academic advisors to ensure data accuracy and reliability</li>
+                  <li>UAT & Documentation: Performed user acceptance testing on the UC student portal, identified usability issues, and developed 20+ HTML documentation pages with actionable feedback for improved accessibility</li>
+                  <li>ServiceNow Support: Resolved Canvas-related help desk tickets through ServiceNow, providing technical assistance daily</li>
+                  <li>LTI Coordination: Gathered integration details from 20+ Canvas LTI vendors to support future deployment planning</li>
+                </ul>
+                <div class="entry-pics mobile-collapsed">
+                  <div class="skeleton skeleton-pic"></div>
+                  <img src="images/experience/ucr1.png" alt="UCR Project" class="entry-pic" loading="lazy">
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="content-section" id="projects" aria-labelledby="projects-title">
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <div class="content-box">
+            <!-- Tag Filter Section -->
+            <div class="project-filter">
+              <button class="filter-tag active" data-filter="all" type="button">View All</button>
+              <button class="filter-tag" data-filter="TypeScript" type="button">TypeScript</button>
+              <button class="filter-tag" data-filter="React" type="button">React</button>
+              <button class="filter-tag" data-filter="React Native" type="button">React Native</button>
+              <button class="filter-tag" data-filter="Expo" type="button">Expo</button>
+              <button class="filter-tag" data-filter="Firebase" type="button">Firebase</button>
+              <button class="filter-tag" data-filter="Python" type="button">Python</button>
+              <button class="filter-tag" data-filter="C++" type="button">C++</button>
+              <button class="filter-tag" data-filter="Java" type="button">Java</button>
+              <button class="filter-tag" data-filter="PostgreSQL" type="button">PostgreSQL</button>
+              <button class="filter-tag" data-filter="HTML/CSS" type="button">HTML/CSS</button>
+              <button class="filter-tag" data-filter="Figma" type="button">Figma</button>
+              <button class="filter-tag" data-filter="Arduino" type="button">Arduino</button>
+            </div>
+
+            <!-- Projects Container -->
+            <div class="projects-container">
+              <!-- Project 1: FoodTracker -->
+              <article class="project-entry" data-tags="TypeScript,React Native,Expo,NativeWind,AsyncStorage">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">FoodTracker – Meal Tracking Mobile App</h3>
+                    <p class="role">TypeScript · React Native · Expo · NativeWind · AsyncStorage</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Built a cross-platform mobile app for daily meal tracking with calendar view, weekly analytics charts, and category-based food breakdown.</li>
+                  <li>Implemented local data persistence using AsyncStorage with date-based meal organization (breakfast, lunch, dinner, snacks, drinks).</li>
+                  <li>Developed custom SVG-based weekly chart visualization using react-native-svg and Victory Native for meal pattern analysis.</li>
+                  <li>Created interactive calendar component with activity indicators and date navigation for historical meal viewing.</li>
+                  <li>Designed timeline view with category-specific color coding and emoji icons for intuitive meal categorization.</li>
+                  <li>Integrated dark/light theme support with dynamic color schemes and haptic feedback for enhanced UX.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">TypeScript</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">NativeWind</span><span class="tag">AsyncStorage</span>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-entry" data-tags="TypeScript,React,Tailwind,Recharts,Firebase">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Personal Finance Dashboard</h3>
+                    <p class="role">TypeScript · React · Tailwind · Recharts · Firebase Analytics</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Built real-time income/expense tracker with interactive charts and Firebase data sync.</li>
+                  <li>Reinforced TypeScript debugging and scalable state management design.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Recharts</span><span class="tag">Firebase</span>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-entry" data-tags="TypeScript,React Native,Firebase,Jest">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">CamJam</h3>
+                    <p class="role">TypeScript · React Native · Firebase · Jest</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Developed Firebase authentication and custom in-app camera & photo upload.</li>
+                  <li>Implemented centralized state management, improving cross-device reliability by 30%.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">TypeScript</span><span class="tag">React Native</span><span class="tag">Firebase</span><span class="tag">Jest</span>
+                </div>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="project-entry" data-tags="C++,Python,KNN">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Smart Glasses (Senior Capstone)</h3>
+                    <p class="role">C++ · Python · KNN</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Implemented live color detection using KNN model and Raspberry Pi camera feed.</li>
+                  <li>Developed small language model (SLM) to classify and learn new colors dynamically.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">C++</span><span class="tag">Python</span><span class="tag">KNN</span>
+                </div>
+              </article>
+
+              <!-- Project 4 -->
+              <article class="project-entry" data-tags="Java,PostgreSQL">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Airline Management System</h3>
+                    <p class="role">Java · PostgreSQL</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Implemented 15+ dynamic SQL queries for real-time operations and reports.</li>
+                  <li>Designed modular, role-based management system for different user types.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">Java</span><span class="tag">PostgreSQL</span>
+                </div>
+              </article>
+
+              <!-- Project 5 -->
+              <article class="project-entry" data-tags="HTML/CSS,Figma,cuDF,Python">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">SteamDB Dashboard</h3>
+                    <p class="role">HTML/CSS · Figma · cuDF · Python</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Designed dashboard UI in Figma for improved UX.</li>
+                  <li>Optimized cuDF queries to process 50,000+ games in under one second.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">HTML/CSS</span><span class="tag">Figma</span><span class="tag">Python</span><span class="tag">cuDF</span>
+                </div>
+              </article>
+
+              <!-- Project 6 -->
+              <article class="project-entry" data-tags="Raspberry Pi,Python,Arduino">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Smart Glasses (ADA Version)</h3>
+                    <p class="role">Raspberry Pi · Python · Arduino</p>
+                  </div>
+                  <button class="expand-toggle mobile-only" aria-label="Toggle details" type="button">
+                    <span class="expand-icon">▼</span>
+                  </button>
+                </div>
+                <ul class="entry-bullets mobile-collapsed">
+                  <li>Developed OLED-based visual display for color recognition.</li>
+                  <li>Implemented KNN algorithm to identify closest color match from camera feed.</li>
+                  <li>Trained model using CSV data from real-world color samples.</li>
+                </ul>
+                <div class="project-tags mobile-collapsed">
+                  <span class="tag">Raspberry Pi</span><span class="tag">Python</span><span class="tag">Arduino</span>
+                </div>
+              </article>
+
+              <!-- Project 7 -->
+              <article class="project-entry" data-tags="Arduino,3D Printing,Hardware">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Phone Gimbal</h3>
+                    <p class="role">Arduino · Hardware</p>
+                  </div>
+                </div>
+                <ul class="entry-bullets">
+                  <li>Designed and 3D printed phone gimbal supporting 3-axis motion and 270° range.</li>
+                  <li>Integrated Arduino and FRDM-K64F board for inter-system UART communication.</li>
+                  <li>Calibrated servo motors to respond to joystick input in under one second.</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tag">Arduino</span><span class="tag">3D Printing</span><span class="tag">Hardware</span>
+                </div>
+              </article>
+
+              <!-- Project 8 -->
+              <article class="project-entry" data-tags="Figma,HTML/CSS,JavaScript">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">DormDash UI & Business Plan</h3>
+                    <p class="role">Figma · HTML/CSS · JavaScript</p>
+                  </div>
+                </div>
+                <ul class="entry-bullets">
+                  <li>Designed product UI and business plan in a Shark Tank-style presentation.</li>
+                  <li>Developed interactive HTML/CSS/JS prototype showcasing product concept.</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tag">Figma</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+                </div>
+              </article>
+
+              <!-- Project 9 -->
+              <article class="project-entry" data-tags="TypeScript,Shell,JavaScript">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Taskly – Task Management App</h3>
+                    <p class="role">TypeScript · Shell · JavaScript</p>
+                  </div>
+                </div>
+                <ul class="entry-bullets">
+                  <li>Built CLI-based productivity tracker with local JSON persistence.</li>
+                  <li>Used TypeScript to enforce type safety across command modules.</li>
+                  <li>Implemented modular shell scripts for build and testing automation.</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tag">TypeScript</span><span class="tag">Shell</span><span class="tag">JavaScript</span>
+                </div>
+              </article>
+
+              <!-- Project 10 -->
+              <article class="project-entry" data-tags="Figma">
+                <div class="entry-header">
+                  <div class="company-info">
+                    <h3 class="company-name">Theta Tau Website Design</h3>
+                    <p class="role">Figma</p>
+                  </div>
+                </div>
+                <ul class="entry-bullets">
+                  <li>Designed Theta Tau, Sigma Delta Chapter website</li>
+                  <li>Developed concept, colors, implementation</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="tag">Figma</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <!-- Content area -->
-    <div class="content-area">
-      <!-- About Section -->
-      <div class="content-section" id="about">
-        <h2 class="content-title">About Me</h2>
-
-        <div class="about-container">
-
-          <!-- Main info -->
-          <div class="about-main">
-            <div class="about-item">
-              <img src="images/icons/location.png" alt="Location Icon">
-              <span>Southern California<br>Inland Empire & Orange County</span>
-            </div>
-            <div class="about-item">
-              <img src="images/icons/education.png" alt="Education Icon">
-              <span>University of California, Riverside - B.S. in Computer Engineering</span>
-            </div>
-            <div class="about-item">
-              <img src="images/icons/interests.png" alt="Interests Icon">
-              <span>Frontend/Web Development, Cloud Computing, Embedded Systems<br><i>pc games, flower arrangement, sewing poouches</i></span>
-            </div>
-          </div>
-
-          <!-- Contact info -->
-          <div class="about-contact">
-            <div class="contact-item">
-              <a href="https://www.linkedin.com/in/catherinedaitruong" target="_blank">
-                <img src="images/icons/linkedin_inactive.png" alt="LinkedIn Icon">
-              </a>
-              <span>linkedin.com/in/catherinedaitruong</span>
-            </div>
-            <div class="contact-item">
-              <a href="mailto:catherinedaitruong@gmail.com">
-                <img src="images/icons/email_inactive.png" alt="Email Icon">
-              </a>
-              <span>catherinedaitruong@gmail.com</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <!-- Skills Section -->
-      <div class="content-section" id="skills">
-        <h2 class="content-title">Skills</h2>
-
-        <div class="skills-container">
-
-          <!-- Languages -->
-          <div class="skill-category" data-color="#BF9AEF">Languages</div>
-          <div class="skills-list">
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>C++</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br>SWE Intern @ First American, <br>Undergrad @UCR">#C++</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>HTML/CSS</div><br>Project(s):<br>DormDash, FinanceDB, Portfolio Website, SteamDB<br><br>Hackathon(s):<br>Cutie Hack 2021, Rose Hack 2023<br><br>Position(s):<br>SIS Intern @ UCR ITS,<br>Undergrad @ UCR">#HTML/CSS</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>JavaScript</div><br>Project(s):<br>FinanceDB, Taskly<br><br>Position(s):<br>Backend SWE Intern @ First American,<br>Undergrad @ UCR">#JavaScript</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>SQL</div><br>Project(s):<br>Airline Management System<br><br>Position(s):<br>SIS Intern @ UCR ITS,<br>SWE Intern @ First American,<br>Undergrad @ UCR">#SQL</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>PostgreSQL</div><br>Project(s):<br>Airline Management System<br><br>Position(s):<br><br>">#PostgreSQL</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>Swift</div><br>Project(s):<br>CamJam<br><br>Position(s):<br><br>">#Swift</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>Python</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br>SWE Intern @ First American,<br>Undergrad @ UCR">#Python</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>TypeScript</div><br>Project(s):<br>Cam Jam, FinanceDB, Taskly<br><br>Position(s):<br><br>">#TypeScript</div>
-            <div class="skill-tag" data-color="#f7c3f7" data-info="<div class='popup-skill-name'>Verilog</div><br>Project(s):<br><br>Position(s):<br>Undergrad @ UCR">#Verilog</div>
-          </div>
-
-          <!-- Frameworks/Libraries -->
-          <div class="skill-category" data-color="#B499E3">Frameworks/Libraries</div>
-          <div class="skills-list">
-            <div class="skill-tag" data-color="#B499E3" data-info="<div class='popup-skill-name'>Angular</div><br>Project(s):<br>Personal Projects<br><br>Position(s):<br><br>">#Angular</div>
-            <div class="skill-tag" data-color="#B499E3" data-info="<div class='popup-skill-name'>React</div><br>Project(s):<br>CamJam, FinanceDB<br><br>Position(s):<br><br>">#React</div>
-            <div class="skill-tag" data-color="#B499E3" data-info="<div class='popup-skill-name'>React Native</div><br>Project(s):<br>CamJam<br><br>Position(s):<br><br>">#ReactNative</div>
-            <div class="skill-tag" data-color="#B499E3" data-info="<div class='popup-skill-name'>Recharts</div><br>Project(s):<br>FinanceDB<br><br>Position(s):<br><br>">#Recharts</div>
-            <div class="skill-tag" data-color="#B499E3" data-info="<div class='popup-skill-name'>Tailwind</div><br>Project(s):<br>FinanceDB<br><br>Position(s):<br><br>">#Tailwind</div>
-          </div>
-
-          <!-- Cloud/DevOps -->
-          <div class="skill-category" data-color="#A88FE0">Cloud/DevOps</div>
-          <div class="skills-list">
-            <div class="skill-tag" data-color="#A88FE0" data-info="<div class='popup-skill-name'>AWS</div><br>Project(s):<br><br>Position(s):<br>AWSSheBuilds Mentorship,<br>Backend SWE @ First American">#AWS</div>
-            <div class="skill-tag" data-color="#A88FE0" data-info="<div class='popup-skill-name'>Azure</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Azure</div>
-            <div class="skill-tag" data-color="#A88FE0" data-info="<div class='popup-skill-name'>Docker</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Docker</div>
-            <div class="skill-tag" data-color="#A88FE0" data-info="<div class='popup-skill-name'>Firebase</div><br>Project(s):<br>CamJam, FinanceDB<br><br>Position(s):<br><br>">#Firebase</div>
-            <div class="skill-tag" data-color="#A88FE0" data-info="<div class='popup-skill-name'>Git</div><br>Project(s):<br>All Projects<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#Git</div>
-          </div>
-
-          <!-- Tools/Platforms -->
-          <div class="skill-category" data-color="#88B4FF">Tools/Platforms</div>
-          <div class="skills-list">
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>Confluence</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Confluence</div>
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>Figma</div><br>Project(s):<br>FinanceDB, SteamDB, Theta Tau Website Design<br><br>Hackathon(s):<br>Cutie Hack 2021, Rose Hack 2023<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#Figma</div>
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>Jira</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Jira</div>
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>Microsoft Suite</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American,<br>Undergrad @ UCR">#MicrosoftSuite</div>
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>Miro</div><br>Project(s):<br><br>Position(s):<br>SWE @ First American">#Miro</div>
-            <div class="skill-tag" data-color="#88B4FF" data-info="<div class='popup-skill-name'>ServiceNow</div><br>Project(s):<br><br>Position(s):<br>SIS Intern @ UCR ITS">#ServiceNow</div>
-          </div>
-
-          <!-- Embedded Systems Section -->
-          <div class="skill-category" data-color="#5A7DFF">Embedded Systems</div>
-          <div class="skills-list">
-            <div class="skill-tag" data-color="#5A7DFF" data-info="<div class='popup-skill-name'>Arduino</div><br>Project(s):<br>Simon Color Game, Phone Gimble<br><br>Position(s):<br><br>">#Arduino</div>
-            <div class="skill-tag" data-color="#5A7DFF" data-info="<div class='popup-skill-name'>Raspberry Pi</div><br>Project(s):<br>Smart Glasses (Senior Capstone)<br><br>Position(s):<br><br>">#RaspberryPi</div>
-            <div class="skill-tag" data-color="#5A7DFF" data-info="<div class='popup-skill-name'>Microcontroller</div><br>Project(s):<br>Phone Gimble<br><br>Position(s):<br><br>">#Microcontroller</div>
-            <div class="skill-tag" data-color="#5A7DFF" data-info="<div class='popup-skill-name'>Motors</div><br>Project(s):<br>Phone Gimble<br><br>Position(s):<br><br>">#Motors</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Popup for skill details -->
-      <div class="skill-popup" id="skill-popup">
-        <span class="close-popup">&times;</span>
-        <div class="popup-content"></div>
-      </div>
-
-      <!-- EXPERIENCE SECTION -->
-      <div class="content-section" id="experience">
-        <h2 class="content-title">Experience</h2>
-
-        <div class="experience-container">
-
-          <!-- AWS She Builds Mentorship -->
-          <div class="experience-entry">
-            <div class="entry-header">
-              <img class="company-logo" src="images/logos/aws.jpeg" alt="AWS Logo">
-              <div class="company-info">
-                <div class="company-name">AWS She Builds Mentorship Program</div>
-                <div class="role">Selected Mentee</div>
-              </div>
-              <div class="location-date">
-                <div class="location">Remote</div>
-                <div class="dates">Aug. 2025 – Present</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Qualification: Chosen for competitive AWS-led mentorship program; engaging in cloud projects and DevOps practices with AWS professionals to strengthen deployment, CI/CD, and career development & technical skills</li>
-            </ul>
-          </div>
-
-          <!-- First American Financial: Full-Stack Intern -->
-          <div class="experience-entry">
-            <div class="entry-header">
-              <img class="company-logo" src="images/logos/first_american.png" alt="First American Logo">
-              <div class="company-info">
-                <div class="company-name">First American Financial</div>
-                <div class="role">Full-Stack Engineering Intern</div>
-              </div>
-              <div class="location-date">
-                <div class="location">Santa Ana, CA</div>
-                <div class="dates">Sept. 2024 – June 2025</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Automation: Enhanced and deployed an automated Jira update/release notes generator to reduce senior overhead by ~30%</li>
-              <li>DevOps: Collaborated with senior engineers in planning sessions for Terraform, Kubernetes, and Docker adoption for MVP</li>
-              <li>.NET 9.0 Upgrade: Upgraded NuGet dependencies and platform to .NET 9.0, improving overall system performance</li>
-              <li>Technical Documentation: Updated 3 GitHub Pages platforms to include legacy documentation using MkDocs</li>
-            </ul>
-            <div class="entry-pics">
-              <img src="images/experience/fa1.png" alt="FA Project" class="entry-pic">
-              <img src="images/experience/fa2.png" alt="FA Project" class="entry-pic">
-            </div>
-          </div>
-
-          <!-- First American Financial: Backend SWE Intern -->
-          <div class="experience-entry">
-            <div class="entry-header">
-              <img class="company-logo" src="images/logos/first_american.png" alt="First American Logo">
-              <div class="company-info">
-                <div class="company-name">First American Financial</div>
-                <div class="role">Backend Software Engineering Intern</div>
-              </div>
-              <div class="location-date">
-                <div class="location">Santa Ana, CA</div>
-                <div class="dates">Jun. 2024 – Aug. 2024</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>AWS Optimization: Curated AWS CloudWatch usage using Python and automated via Lambda & EventBridge, reducing costs by 78% and unused log groups by 88%</li>
-              <li>HTTPS Compliance: Automated HTTPS-conditional security compliance for 92% of AWS S3 buckets</li>
-              <li>Design Filtering: Designed & optimized a filter to determine log group necessity within < 3 seconds per log group</li>
-              <li>Data Export: Exported 4 JSON files to S3 tracking 600+ updated log groups involving 4 years of data</li>
-            </ul>
-            <div class="entry-pics">
-              <img src="images/experience/fa_backend1.png" alt="FA Backend" class="entry-pic">
-              <img src="images/experience/fa_backend2.png" alt="FA Backend" class="entry-pic">
-            </div>
-          </div>
-
-          <!-- UCR ITS -->
-          <div class="experience-entry">
-            <div class="entry-header">
-              <img class="company-logo" src="images/logos/ucr.jpg" alt="UCR Logo">
-              <div class="company-info">
-                <div class="company-name">UCR Information & Technology Solutions</div>
-                <div class="role">Student Information Systems Intern</div>
-              </div>
-              <div class="location-date">
-                <div class="location">Riverside, CA</div>
-                <div class="dates">Apr. 2023 – Sept. 2024</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Database Queries: Tested SQL queries for students and academic advisors to ensure data accuracy</li>
-              <li>UAT & Documentation: Performed user acceptance testing and created 20+ HTML documentation pages with actionable feedback</li>
-              <li>ServiceNow Support: Resolved Canvas-related help desk tickets</li>
-              <li>LTI Coordination: Gathered integration details from 20+ Canvas LTI vendors for future deployment</li>
-            </ul>
-            <div class="entry-pics">
-              <img src="images/experience/ucr1.png" alt="UCR Project" class="entry-pic">
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <!-- Projects Section -->
-      <div id="projects" class="content-section">
-      <div class="content-title">Projects (WIP)</div>
-      <div class="content-box">
-        <!-- Tag Filter Section -->
-        <div class="project-filter">
-          <span class="filter-tag active" data-filter="all">View All</span>
-          <span class="filter-tag" data-filter="TypeScript">TypeScript</span>
-          <span class="filter-tag" data-filter="React">React</span>
-          <span class="filter-tag" data-filter="Firebase">Firebase</span>
-          <span class="filter-tag" data-filter="Python">Python</span>
-          <span class="filter-tag" data-filter="C++">C++</span>
-          <span class="filter-tag" data-filter="Java">Java</span>
-          <span class="filter-tag" data-filter="PostgreSQL">PostgreSQL</span>
-          <span class="filter-tag" data-filter="HTML/CSS">HTML/CSS</span>
-          <span class="filter-tag" data-filter="Figma">Figma</span>
-          <span class="filter-tag" data-filter="Arduino">Arduino</span>
-          <span class="filter-tag" data-filter="React Native">React Native</span>
-        </div>
-
-        <!-- Scrollable Project Container -->
-        <div class="projects-container">
-
-          <!-- Project 1 -->
-          <div class="project-entry" data-tags="TypeScript,React,Tailwind,Recharts,Firebase">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Personal Finance Dashboard</div>
-                <div class="role">TypeScript · React · Tailwind · Recharts · Firebase Analytics</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Built real-time income/expense tracker with interactive charts and Firebase data sync.</li>
-              <li>Reinforced TypeScript debugging and scalable state management design.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Recharts</span><span class="tag">Firebase</span>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-entry" data-tags="TypeScript,React Native,Firebase,Jest">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">CamJam</div>
-                <div class="role">TypeScript · React Native · Firebase · Jest</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Developed Firebase authentication and custom in-app camera & photo upload.</li>
-              <li>Implemented centralized state management, improving cross-device reliability by 30%.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">TypeScript</span><span class="tag">React Native</span><span class="tag">Firebase</span><span class="tag">Jest</span>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-entry" data-tags="C++,Python,KNN">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Smart Glasses (Senior Capstone)</div>
-                <div class="role">C++ · Python · KNN</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Implemented live color detection using KNN model and Raspberry Pi camera feed.</li>
-              <li>Developed small language model (SLM) to classify and learn new colors dynamically.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">C++</span><span class="tag">Python</span><span class="tag">KNN</span>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-entry" data-tags="Java,PostgreSQL">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Airline Management System</div>
-                <div class="role">Java · PostgreSQL</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Implemented 15+ dynamic SQL queries for real-time operations and reports.</li>
-              <li>Designed modular, role-based management system for different user types.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Java</span><span class="tag">PostgreSQL</span>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-entry" data-tags="HTML/CSS,Figma,cuDF,Python">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">SteamDB Dashboard</div>
-                <div class="role">HTML/CSS · Figma · cuDF · Python</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Designed dashboard UI in Figma for improved UX.</li>
-              <li>Optimized cuDF queries to process 50,000+ games in under one second.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">HTML/CSS</span><span class="tag">Figma</span><span class="tag">Python</span><span class="tag">cuDF</span>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="project-entry" data-tags="Raspberry Pi,Python,Arduino">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Smart Glasses (ADA Version)</div>
-                <div class="role">Raspberry Pi · Python · Arduino</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Developed OLED-based visual display for color recognition.</li>
-              <li>Implemented KNN algorithm to identify closest color match from camera feed.</li>
-              <li>Trained model using CSV data from real-world color samples.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Raspberry Pi</span><span class="tag">Python</span><span class="tag">Arduino</span>
-            </div>
-          </div>
-
-          <!-- Project 7 -->
-          <div class="project-entry" data-tags="Arduino,3D Printing,Hardware">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Phone Gimbal</div>
-                <div class="role">Arduino · Hardware</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Designed and 3D printed phone gimbal supporting 3-axis motion and 270° range.</li>
-              <li>Integrated Arduino and FRDM-K64F board for inter-system UART communication.</li>
-              <li>Calibrated servo motors to respond to joystick input in under one second.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Arduino</span><span class="tag">3D Printing</span><span class="tag">Hardware</span>
-            </div>
-          </div>
-
-          <!-- Project 8 -->
-          <div class="project-entry" data-tags="Figma,HTML/CSS,JavaScript">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">DormDash UI & Business Plan</div>
-                <div class="role">Figma · HTML/CSS · JavaScript</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Designed product UI and business plan in a Shark Tank-style presentation.</li>
-              <li>Developed interactive HTML/CSS/JS prototype showcasing product concept.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Figma</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 9 -->
-          <div class="project-entry" data-tags="TypeScript,Shell,JavaScript">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Taskly – Task Management App</div>
-                <div class="role">TypeScript · Shell · JavaScript</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Built CLI-based productivity tracker with local JSON persistence.</li>
-              <li>Used TypeScript to enforce type safety across command modules.</li>
-              <li>Implemented modular shell scripts for build and testing automation.</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">TypeScript</span><span class="tag">Shell</span><span class="tag">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- Project 10 -->
-          <div class="project-entry" data-tags="Figma">
-            <div class="entry-header">
-              <div class="company-info">
-                <div class="company-name">Theta Tau Website Design</div>
-                <div class="role">Figma</div>
-              </div>
-            </div>
-            <ul class="entry-bullets">
-              <li>Designed Theta Tau, Sigma Delta Chapter website</li>
-              <li>Developed concept, colors, implementation</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Figma</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
+    <!-- Skill Popup -->
+    <div class="skill-popup" id="skill-popup" role="dialog" aria-labelledby="popup-title" aria-modal="true">
+      <button class="close-popup" aria-label="Close popup">&times;</button>
+      <div class="popup-content" id="popup-title"></div>
     </div>
   </div>
+
   <script src="script.js"></script>
-
-
 </body>
+
 </html>
